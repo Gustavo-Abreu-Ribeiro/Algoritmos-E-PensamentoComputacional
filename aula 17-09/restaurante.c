@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define taxa 0.10
+#define TAXA 0.10
 
 int main() {
     float totalConsumo, taxaServico, totalConta, valorIndividual;
@@ -10,7 +10,7 @@ int main() {
     printf("Digite a quantidade de pessoas: ");
     scanf("%d", &qtdPessoas);
 
-    taxaServico = totalConsumo * taxa;
+    taxaServico = totalConsumo * TAXA;
     totalConta = totalConsumo + taxaServico;
     valorIndividual = totalConta / qtdPessoas;
 
